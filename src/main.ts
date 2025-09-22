@@ -8,3 +8,13 @@ type Person = {
   biography: string,
   image: string,
 }
+
+//Snack 2
+
+type ActressNationality = "American" | "British" | "Australian" | "South African" | "French" | "Indian" | "Spanish" | "South Korean" | "Chinese"
+
+type Actress = Person & {
+  most_famous_movies: [string, string, string],
+  awards: string,
+  nationality: ActressNationality,
+}
